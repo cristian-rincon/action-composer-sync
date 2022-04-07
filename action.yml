@@ -1,0 +1,25 @@
+name: Sync DAGs to Composer
+description: Sync Airflow DAGs to Google Cloud Composer
+author: Cristian Rincon
+inputs:
+  GOOGLE_APPLICATION_CREDENTIALS:
+    description: GCP service account key
+    required: true
+  PROJECT_ID:
+    description: GCP project ID
+    required: true
+  ENVIRONMENT:
+    description: Cloud Composer environment name
+    required: true
+  LOCATION:
+    description: Cloud Composer environment location
+    required: true
+  DAG_NAME:
+    description: DAGs folder
+    required: true
+branding:
+  color: 'green'
+  icon: 'refresh-cw'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
