@@ -28,7 +28,7 @@ This action will fetch your DAGs from Apache Airflow and push them to Google Clo
 
 ```yaml
 name: Sync Airflow DAGs to Google Cloud Composer
-uses: cristian-rincon/action-composer-sync@0.1.0
+uses: cristian-rincon/action-composer-sync@v0.1.0
 with:
     GOOGLE_APPLICATION_CREDENTIALS: "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}"
     PROJECT_ID: "${{ secrets.PROJECT_ID }}"
