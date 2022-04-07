@@ -2,7 +2,7 @@
 
 This action helps you to fetch your Apache Airflow DAGs to Google Cloud Composer. The action expect `GOOGLE_APPLICATION_CREDENTIALS` encoded as base64.
 
-It's highly recommended to save your credentials as Encrypted secrets and read them from {{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}.
+It's highly recommended to save your credentials as Encrypted secrets and read them from `{{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}`.
 
 More information about [Encrypted Secrets](https://docs.github.com/en/enterprise-server@3.3/actions/security-guides/encrypted-secrets).
 
